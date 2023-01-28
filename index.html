@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="container">
+            <div class="boxed">
+                <div class="content">
+                    <h3>Book Sumbission Form</h3>
+                    <form action="#" id="bookForm">
+                        <div class="form-group">
+                            <label for="title">Book Title</label>
+                            <input type="text" name="title" id="title" placeholder="Enter Book Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="author">Author</label>
+                            <input type="text" name="author" id="author" placeholder="Enter Author Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Categories</label>
+                            <select name="category" id="category">
+                                <option value="fiction" selected>Fiction</option>
+                                <option value="non-fiction">Non-Fiction</option>
+                                <option value="biography">Biography</option>
+                                <option value="science">Science</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="publisher">Publisher</label>
+                            <input type="text" name="publisher" id="publisher" placeholder="Enter Publisher Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="year">Publication Year</label>
+                            <input type="number" name="year" id="year" placeholder="Enter Publication Year">
+                        </div>
+                        <div class="form-group">
+                            <label for="pages">Pages</label>
+                            <input type="number" name="pages" id="pages" placeholder="Enter Number of Pages">
+                        </div>
+                        <div class="form-group">
+                            <label for="read">Have you read this book?</label>
+                            <div class="radio">
+                                <div class="radio-button">
+                                    <input type="radio" name="read" id="read" value="yes" checked>
+                                    <label for="read">Yes</label>
+                                </div>
+                                <div class="radio-button">
+                                    <input type="radio" name="read" id="read" value="no">
+                                    <label for="read">No</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class=" boxed">
+                <div class="content">
+                    <h3>Unread Book List</h3>
+                    <div class="book-list" id="unreadBook">
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Read Book List</h3>
+                    <div class="book-list" id="readBook">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
